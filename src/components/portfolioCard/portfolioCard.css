@@ -11,6 +11,10 @@
         width: auto;
     }
 
+    .portfolioImgContainer {
+        text-align: center;
+    }
+
     .portfolioImgContainer img {
         height: 175px;
     }

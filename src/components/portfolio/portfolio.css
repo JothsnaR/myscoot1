@@ -85,6 +85,7 @@
     }
     .portfolioHeading .item {
         line-height: 30px;
+        padding: 5px 24px;
     }
     .portfolio .rec-arrow-left {
         display: none;
@@ -125,7 +126,13 @@
     }
 }
 
-@media (min-width: 599px) and (max-width: 1299px) {
+@media (min-width: 445px) and (max-width: 599px) {
+    .portfolioHeading .item {
+        padding: 5px 40px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1299px) {
     .portfolioContainer {
         margin-top: 230px;
         padding-left: 0px;

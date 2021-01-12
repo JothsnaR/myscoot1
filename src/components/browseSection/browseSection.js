@@ -165,7 +165,7 @@ class BrowseSection extends React.Component {
                 this.setState({
                     data: this.state.data.concat(formData)
                 })
-            }, 500)
+            }, 2000)
         } else if (this.dataLength === browseData.length) {
             this.setState({
                 hasMore: false
@@ -174,7 +174,6 @@ class BrowseSection extends React.Component {
     }
     render() {
         this.dataLength = this.state.data.length;
-        console.log(this.state.data, this.dataLength, browseData.length)
         return (
             <div className="browseSectionContainer">
                 <div className="browseSectionTitle">
@@ -186,6 +185,7 @@ class BrowseSection extends React.Component {
                         dataLength={this.state.data.length}
                         next={this.handleLoadData}
                         hasMore={this.state.hasMore}
+                        scrollThreshold={0.5}
                         loader={<div class="loader" style={{ textAlign: "center" }} ></div>}
                     >
                         <section className="cards">
