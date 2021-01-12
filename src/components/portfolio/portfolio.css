@@ -63,7 +63,9 @@
     min-width: 45px;
 }
 .portfolio .rec-arrow:hover {
-    box-shadow: none !important;
+    box-shadow: none!important;
+    color: transparent !important;
+    background-color: transparent !important;
 }
 
 @media (min-width: 300px) and (max-width: 599px) {
